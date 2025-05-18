@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Dev Quiz Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas class="background-canvas"></canvas>
+  <main class="quiz-container">
+    <div class="progress">
+      Question <span id="current">1</span>/15
+      <div class="timer">Time: 30s</div>
+    </div>
+    <h2 id="question">Question text here</h2>
+    <div class="options">
+      <button class="option" data-answer="0" aria-label="Option 1">Option 1</button>
+      <button class="option" data-answer="1" aria-label="Option 2">Option 2</button>
+      <button class="option" data-answer="2" aria-label="Option 3">Option 3</button>
+      <button class="option" data-answer="3" aria-label="Option 4">Option 4</button>
+    </div>
+    <div class="feedback" id="feedback" aria-live="polite"></div>
+    <button class="next-btn" id="next" disabled>Next</button>
+  </main>
+  <section class="results" id="results">
+    <h2>Your Score: <span id="score"></span>/15</h2>
+    <p id="message"></p>
+    <button class="restart-btn" id="restart">Restart Quiz</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
